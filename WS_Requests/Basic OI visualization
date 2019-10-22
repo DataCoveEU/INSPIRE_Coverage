@@ -1,0 +1,6 @@
+image>>
+for $oi in (INSPIRE_OI_RGB)
+return encode(
+  $oi[E(492000:496000), N(4654000:4656000)],
+  "png"
+)
