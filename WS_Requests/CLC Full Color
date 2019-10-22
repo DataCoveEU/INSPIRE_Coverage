@@ -1,0 +1,96 @@
+image>>
+for $lc in (INSPIRE_WS_LC)
+return encode(
+  ( switch
+    case $lc[E(480000:500000), N(4640000:4654000)] = 111 return {red:230;
+green:0; blue:77}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 112 return {red:255;
+green:0; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 121 return {red:204;
+green:77; blue:242}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 122 return {red:204;
+green:0; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 123 return {red:230;
+green:204; blue:204}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 124 return {red:230;
+green:204; blue:230}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 131 return {red:166;
+green:0; blue:204}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 132 return {red:166;
+green:77; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 133 return {red:255;
+green:77; blue:255}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 141 return {red:255;
+green:166; blue:255}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 142 return {red:255;
+green:230; blue:255}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 211 return {red:255;
+green:255; blue:168}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 212 return {red:255;
+green:255; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 213 return {red:230;
+green:230; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 221 return {red:230;
+green:128; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 222 return {red:242;
+green:166; blue:77}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 223 return {red:230;
+green:166; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 231 return {red:230;
+green:230; blue:77}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 241 return {red:255;
+green:230; blue:166}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 242 return {red:255;
+green:230; blue:77}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 243 return {red:230;
+green:204; blue:77}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 244 return {red:242;
+green:204; blue:166}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 311 return {red:128;
+green:255; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 312 return {red:0;
+green:166; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 313 return {red:77;
+green:255; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 321 return {red:204;
+green:242; blue:77}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 322 return {red:166;
+green:255; blue:128}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 323 return {red:166;
+green:230; blue:77}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 324 return {red:166;
+green:242; blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 331 return {red:230;
+green:230; blue:230}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 332 return {red:204;
+green:204; blue:204}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 333 return {red:204;
+green:255; blue:204}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 334 return {red:0; green:0;
+blue:0}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 335 return {red:166;
+green:230; blue:204}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 411 return {red:166;
+green:166; blue:255}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 412 return {red:77;
+green:77; blue:255}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 421 return {red:204;
+green:204; blue:255}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 422 return {red:230;
+green:230; blue:255}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 423 return {red:166;
+green:166; blue:230}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 511 return {red:0;
+green:204; blue:242}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 512 return {red:128;
+green:242; blue:230}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 521 return {red:0;
+green:255; blue:166}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 522 return {red:166;
+green:255; blue:230}
+    case $lc[E(480000:500000), N(4640000:4654000)] = 523 return {red:230;
+green:242; blue:255}
+    default                                              return {red:0; green:0;
+blue:0}),
+  "png"
+)
