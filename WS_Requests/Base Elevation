@@ -1,0 +1,6 @@
+image>>
+for $el in (INSPIRE_EL)
+return encode(
+    $el[E(492000:496000), N(4654000:4656000)],
+  "png"
+)
