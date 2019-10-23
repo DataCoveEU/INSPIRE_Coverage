@@ -1,0 +1,21 @@
+image>>
+for $el in (INSPIRE_EL),
+    $lc in (INSPIRE_WS_LC),
+    $ir in (INSPIRE_OI_IR),
+    $oi in (INSPIRE_OI_RGB)
+return encode(
+  ( ( (unsigned char)
+      switch
+        case   scale( $el[E(480000:484000), N(4649750:4652000)], { imageCrsDomain($oi[E(480000:484000), N(4649750:4652000)]) } ) > 15
+           and scale( $el[E(480000:484000), N(4649750:4652000)], { imageCrsDomain($oi[E(480000:484000), N(4649750:4652000)]) } ) < 150
+           and scale( $lc[E(480000:484000), N(4649750:4652000)], { imageCrsDomain($oi[E(480000:484000), N(4649750:4652000)]) } ) = 221
+           and ($ir.red - $ir.green) / ($ir.red + $ir.green) > 0.6
+          return {red: 255; green: 255; blue: 0}
+        default
+          return {red: 0; green: 0; blue: 0}
+    )
+    overlay
+      $oi
+  ) [E(480000:484000), N(4649750:4652000)]
+  , "jpeg"
+) 
