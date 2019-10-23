@@ -1,0 +1,11 @@
+image>>
+for $el in (INSPIRE_EL)
+return encode(
+  ( switch
+      case $el < 40 return {red:0; green:0; blue:0}
+      case $el < 50 return {red:0; green:0; blue:80}
+      case $el < 60 return {red:0; green:0; blue:160}
+      default       return {red:0; green:0; blue:240}
+  ) [E(492000:496000), N(4654000:4656000)],
+  "png"
+)
