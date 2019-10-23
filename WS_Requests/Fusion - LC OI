@@ -1,0 +1,16 @@
+image>>
+for $lc in (INSPIRE_WS_LC),
+    $oi in (INSPIRE_OI_RGB)
+return encode(
+    scale(
+      (unsigned char)
+      switch
+        case $lc[E(480000:484000), N(4649750:4652000)] = 221 return {red:230; green:128; blue:0}
+        case $lc[E(480000:484000), N(4649750:4652000)] = 111 return {red:230; green:0; blue:77}
+        default                                              return {red:0; green:0; blue:0} ,
+      { imageCrsDomain( $oi[E(480000:484000), N(4649750:4652000)]) }
+    )
+  overlay
+    (unsigned char) $oi [E(480000:484000), N(4649750:4652000)],
+  "jpeg"
+)
