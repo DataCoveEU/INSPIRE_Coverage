@@ -1,0 +1,6 @@
+image>>
+for $lc in (INSPIRE_WS_LC)
+return encode(
+  $lc[E(480000:500000), N(4640000:4654000)],
+  "png"
+)
