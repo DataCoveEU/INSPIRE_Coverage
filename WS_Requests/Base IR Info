@@ -1,0 +1,6 @@
+image>>
+for $ir in (INSPIRE_OI_IR)
+return encode(
+  $ir[E(492000:496000), N(4654000:4656000)],
+  "png"
+)
