@@ -1,0 +1,52 @@
+image>>
+for $lc in (FiLCCoverageBit)
+return encode(
+  ( switch
+			case $lc[E(620000:640000), N(7216760:7236760)] = 1 return {red:230; green:0; blue:77}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 2 return {red:255; green:0; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 3 return {red:204; green:77; blue:242}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 4 return {red:204; green:0; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 5 return {red:230; green:204; blue:204}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 6 return {red:230; green:204; blue:230}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 7 return {red:166; green:0; blue:204}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 8 return {red:166; green:77; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 9 return {red:255; green:77; blue:255}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 10 return {red:255; green:166; blue:255}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 11 return {red:255; green:230; blue:255}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 12 return {red:255; green:255; blue:168}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 13 return {red:255; green:255; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 14 return {red:230; green:230; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 15 return {red:230; green:128; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 16 return {red:242; green:166; blue:77}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 17 return {red:230; green:166; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 18 return {red:230; green:230; blue:77}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 19 return {red:255; green:230; blue:166}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 20 return {red:255; green:230; blue:77}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 21 return {red:230; green:204; blue:77}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 22 return {red:242; green:204; blue:166}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 23 return {red:128; green:255; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 24 return {red:0; green:166; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 25 return {red:77; green:255; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 26 return {red:204; green:242; blue:77}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 27 return {red:166; green:255; blue:128}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 28 return {red:166; green:230; blue:77}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 29 return {red:166; green:242; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 30 return {red:230; green:230; blue:230}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 31 return {red:204; green:204; blue:204}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 32 return {red:204; green:255; blue:204}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 33 return {red:0; green:0; blue:0}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 34 return {red:166; green:230; blue:204}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 35 return {red:166; green:166; blue:255}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 36 return {red:77; green:77; blue:255}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 37 return {red:204; green:204; blue:255}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 38 return {red:230; green:230; blue:255}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 39 return {red:166; green:166; blue:230}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 40 return {red:0; green:204; blue:242}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 41 return {red:128; green:242; blue:230}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 42 return {red:0; green:255; blue:166}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 43 return {red:166; green:255; blue:230}
+			case $lc[E(620000:640000), N(7216760:7236760)] = 44 return {red:230; green:242; blue:255}
+    default                                              return {red:0; green:0;
+blue:0}),
+  "png"
+)
